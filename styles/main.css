@@ -1,0 +1,75 @@
+/* color scheme
+cultured - #F5F5F5
+sky blue crayola - #07e8ff
+carnation pink - #ffa4cb
+golden poppy - #f8c000
+sea green crayola - #00ffc1
+light steel blue - #a4bfe4
+*/
+
+body {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin: 0;
+}
+section {
+  height: 100vh;
+  margin: 0;
+}
+.contact {
+  background-color: #F5F5F5;
+  display: flex;
+  justify-content: space-evenly;
+}
+.contact-item {
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+}
+.contact-item i {
+  margin: 0 10px;
+}
+
+.hero {
+  background: linear-gradient(-150deg, #F5F5F5 50%, #ffa4cb 50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 7rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+
+
+.bio {
+  background: linear-gradient(160deg, #F5F5F5 65%, #07e8ff 55%);
+}
+
+.skills {
+  background: linear-gradient(-140deg, #F5F5F5 40%, #f8c000 30%);
+}
+
+.projects {
+  background: linear-gradient(-160deg, #F5F5F5 65%, #00ffc1 55%);
+}
+
+.exp {
+  background: linear-gradient(120deg, #F5F5F5 65%, #a4bfe4 55%);
+}
+
+ul {
+  list-style: none;
+}
+
+.projects-wrapper {
+  display: flex;
+  flex-wrap: row wrap;
+}
