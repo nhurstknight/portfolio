@@ -30,14 +30,6 @@ section {
   margin: 0 10px;
 }
 
-.hero {
-  background: linear-gradient(-150deg, #F5F5F5 50%, #ffa4cb 50%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 h1 {
   font-size: 7rem;
 }
@@ -47,29 +39,89 @@ h2 {
   font-size: 3rem;
 }
 
-
+.hero {
+  background: linear-gradient(-10deg, #F5F5F5 50%, #ffa4cb 50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .bio {
-  background: linear-gradient(160deg, #F5F5F5 65%, #07e8ff 55%);
+  background: linear-gradient(160deg, #F5F5F5 50%, #07e8ff 50%);
+}
+
+.bio-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+
+}
+
+.bio-content img {
+  border-radius: 50%;
+  height: 300px;
+  width: auto;
+  margin: 40px;
+}
+
+.bio-content p {
+  font-size: 1.5em;
+  line-height: 2;
+  width: 80%;
+  margin: auto;
+  text-align: justify;
 }
 
 .skills {
-  background: linear-gradient(-140deg, #F5F5F5 40%, #f8c000 30%);
+  background: linear-gradient(20deg, #F5F5F5 50%, #f8c000 50%);
 }
 
-.projects {
-  background: linear-gradient(-160deg, #F5F5F5 65%, #00ffc1 55%);
+.icon-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 30px auto;
+}
+
+.icon-wrapper i {
+  margin: 20px;
+  font-size: 100px;
 }
 
 .exp {
-  background: linear-gradient(120deg, #F5F5F5 65%, #a4bfe4 55%);
+  background: linear-gradient(120deg, #F5F5F5 50%, #a4bfe4 50%);
 }
 
-ul {
-  list-style: none;
+.projects {
+  background: linear-gradient(-40deg, #F5F5F5 50%, #00ffc1 50%);
 }
 
 .projects-wrapper {
   display: flex;
-  flex-wrap: row wrap;
+  flex-flow: row wrap;
+}
+
+.project-card {
+  width: 60%;
+  margin: auto;
+}
+
+
+button {
+  width: 60px;
+}
+
+.btn-cont {
+  display: flex;
+  justify-content: space-around;
+}
+
+button i {
+  font-size: 30px;
+  margin: 4px;
 }
