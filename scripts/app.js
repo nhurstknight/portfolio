@@ -13,22 +13,21 @@ function init() {
   })
 
   window.addEventListener('scroll', () => {
-    navHeader.classList[window.scrollY > 20 ? 'add' : 'remove']('hide')
+    navHeader.classList[window.scrollY > 200 ? 'add' : 'remove']('hide')
   })
-
   window.addEventListener('scroll', () => {
-    scrollUpBtn.classList[window.scrollY > 150 ? 'add' : 'remove']('show')
+    scrollUpBtn.classList[window.scrollY > 200 ? 'add' : 'remove']('show')
     console.log(scrollY)
   })
 
-  function parallax(element, distance, speed) {
-    const item = document.querySelector(element)
-    item.style.transform = `translateY(${distance * speed}px)`
-  }
+  // function parallax(element, distance, speed) {
+  //   const item = document.querySelector(element)
+  //   item.style.transform = `translateY(${distance * speed}px)`
+  // }
   
-  window.addEventListener('scroll', function() {
-    parallax('.hero-text', window.scrollY, 0.2)
-  })
+  // window.addEventListener('scroll', function() {
+  //   parallax('.hero-text', window.scrollY, 0.2)
+  // })
 
 }
 
