@@ -156,6 +156,7 @@ nav {
 .scroll-down-btn {
   position: absolute;
   bottom: 5%;
+  display: hidden; /* turn this off */
 }
 .scroll-up-btn.show,
 .scroll-down-btn {
@@ -181,8 +182,47 @@ nav {
   }
 }
 
+/* coming soon */
+#coming-soon {
+  background: #F5F5F5;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.coming-soon-text {
+  position: relative;
+  background-image: url(/assets/hero-bg-visuals.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+.hero-text h2 {
+  margin: 10px auto
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 72px;
+  }
+  h2 {
+    font-size: 56px;
+  }
+  h3 {
+    font-size: 48px;
+  }
+}
+
+
 /* HERO STYLING */
-#hero {
+/* #hero {
   background: #F5F5F5;
   height: 90vh;
   display: flex;
@@ -219,10 +259,10 @@ nav {
 #exp p {
   width: 70%;
   margin: auto;
-}
+} */
 
 /* TECHNOLOGIES STYLING */
-#tech .section-title {
+/* #tech .section-title {
   background-image: url(/assets/blue-title-bg.png);
 }
 .tech-i-wrapper {
@@ -236,21 +276,21 @@ nav {
 .tech-i-wrapper i {
   margin: 14px;
   font-size: 50px;
-}
+} */
 
 /* EXPERIENCE STYLING */
-#exp .section-title {
+/* #exp .section-title {
   background-image: url(/assets/yellow-title-bg.png);
 }
 .ga-logo {
   width: 60%;
   margin: auto;
   padding: 0.5em 0;
-}
+} */
 
 
 /* PROJECT SECTION */
-#projects .section-title
+/* #projects .section-title
   {
   background-image: url(/assets/green-title-bg.png);
 }
@@ -294,11 +334,11 @@ button i {
 hr {
   width: 40%;
   margin: 20px auto;
-}
+} */
 
 
 /* FOOTER SECTION */
-#footer .section-title {
+/* #footer .section-title {
   background-image: url(/assets/powder-blue-title-bg.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -310,7 +350,6 @@ footer {
 #footer .section-content {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-evenly; */
   position: relative;
   bottom: -5%;
 }
@@ -318,7 +357,6 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  /* height: 40vh; */
 }
 
 .contact-item {
@@ -342,12 +380,9 @@ footer {
     font-size: 3em;
   }
   p, h3, h4 {
-    font-size: 1.8em;
+    font-size: 1.5em;
     line-height: 2;
   }
-  /* .nav-links {
-    border-left: 1px solid #dddddd;
-  } */
   .nav-links.active {
     width: 30%;
     transform: translateX(233%)
@@ -374,9 +409,9 @@ footer {
   .contact-item {
     font-size: 1.4em;
   }
-  /* nav {
+  nav {
     position: sticky;
-  } */
+  }
   .nav-links i, 
   .burger {
     display: none;
@@ -423,4 +458,8 @@ footer {
   .tech-i-wrapper i {
     margin: 0.5em;
   }
-}
+  .tech-stack i { 
+    font-size: 4em; 
+    padding: 0.5em;
+  }
+} */
