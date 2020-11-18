@@ -325,16 +325,21 @@ nav {
 
 /* FOOTER */
 footer {
+  position: relative;
   margin: auto;
   width: 80%;
-  height: 40vh;
+  height: 45vh;
 }
 #contact .title {
   background-image: url(/assets/title/title-powder-blue.png);
 }
 footer .section-content {
   box-shadow: -10px 10px #a4bfe4;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .contact-links {
   display: flex;
@@ -373,7 +378,7 @@ footer .section-content {
 }
 #p5 {
   background-image: url(/assets/parallax/lavender.png);
-  height: 60vh;
+  height: 65vh;
 }
 
 @media screen and (min-width: 720px) {
@@ -445,6 +450,7 @@ footer .section-content {
 }
 
 @media screen and (min-width: 1024px) {
+
   .nav-links i, 
   .burger {
     display: none;
@@ -500,6 +506,6 @@ footer .section-content {
     margin: 1em;
   }
   .contact-links i {
-    font-size: 70px;
+    font-size: 50px;
   }
 }
