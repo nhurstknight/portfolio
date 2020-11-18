@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/styles/main.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
-
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/2cd7446f3d.js" crossorigin="anonymous"></script>
@@ -15,34 +16,27 @@
 <body>
   <nav>
     <div class="nav-header"> 
-      <a href="#"><img  class="brand-logo" src="/assets/navbar-brand-logo.png" alt="brand logo"></a>
+      <a href="#"><img  class="brand-logo" src="/assets/logo.png" alt="brand logo"></a>
       <div class="burger"><i class="fas fa-bars"></i></div>
     </div>
     <div class="nav-links">
       <i class="close-nav fas fa-times"></i>
       <ul class="nav-menu">
         <li><a class="nav-link" href="#about">About</a></li>
-        <li><a class="nav-link" href="#tech">Technologies</a></li>
         <li><a class="nav-link" href="#exp">Experience</a></li>
+        <li><a class="nav-link" href="#tech">Technologies</a></li>
         <li><a class="nav-link" href="#projects">Projects</a></li>
-        <li><a class="nav-link" href="#footer">Contact</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
+
   <a class="scroll-up-btn" href="#"><i class="fas fa-chevron-circle-up fa-2x"></i></a>
-
-  <section id="coming-soon">
-    <div class="coming-soon-text">
-      <h1>Natalie <br>
-        Hurst-Knight</h1>
-      <h3>Junior Developer</h3>
-      <br>
-      <h2>Launching soon...</h2>
+  
+  <section id="hero">
+    <div class="hero-bg-img">
+      <img src="/assets/hero/hero-bg-img.png" alt="colourful stripes">
     </div>
-    <a class="scroll-down-btn" href="#about"><i class="fas fa-chevron-circle-down fa-2x"></i></i></a>
-  </section>
-
-  <!-- <section id="hero">
     <div class="hero-text">
       <h1>Natalie <br>
         Hurst-Knight</h1>
@@ -50,20 +44,39 @@
     </div>
     <a class="scroll-down-btn" href="#about"><i class="fas fa-chevron-circle-down fa-2x"></i></i></a>
   </section>
-
+  <div class="parallax" id="p1">
+  </div>
   <section id="about">
-    <h1 class="section-title">About Me</h1>
+    <h1 class="title">About</h1>
     <div class="section-content">
-      <img src="/assets/icon-img.JPG" alt="profile"> 
-      <p>Hi, I'm Nat!<br><br>
-        Before studying Software Engineering Immersive at General Assembly I worked in the fashion industry, where I worked closely with Designers and Buyers to bring life to creative visions, whilst also managing multiple stakeholders and tight deadlines. 
-        Now, I would love to use my new skills within a creative industry such as digital marketing or media, where I could further develop my skills and understanding of coding.       
+      <img class="about-img" src="/assets/about/profile-img-small.jpg" alt="photo of Natalie">
+      <div class="bio">
+        <p>Hi, I'm Natalie. I'm a Junior Developer based in London.<br><br>  
+          I have experience building full stack applications and a passion for front-end development and design.<br><br> 
+          Before taking the plunge and pursuing a career change, I worked in a fast-paced and challenging industry; Fashion. I worked closely with Designers and Buyers to bring life to creative visions, whilst also managing multiple stakeholders.
+          Now, I would love to join an innovative company that develops well designed applications, where I could further develop my skills and understanding of coding.
+        </p>
+      </div>
+    </div>
+  </section>
+  <div class="parallax" id="p2">
+  </div>
+  <section id="exp">
+    <h1 class="title">Experience</h1>
+    <div class="section-content">
+      <img class="ga-logo" src="/assets/ga-logo-3.png" alt="General Assembly logo">
+      <h3>Software Engineering Immersive Bootcamp</h3>
+      <p class="subtitle">Aug 2020 - Oct 2020</p>
+      <p>
+        After discovering coding in 2019, I decided that I wanted to pursue a career as a Developer and decided to enrol on the SEI bootcamp at General Assembly. I really enjoyed my time at GA as it allowed me to collborate with talented course mates on challenging projects. <br><br> 
+        A typical day-to-day on the course started with morning stand-up, followed by instructor-led remote interactive code-along sessions and pair coding labs which has prepared me to work in an Agile environment. At the end of each module, we completed a project using the technologies we had just learned.
       </p>
     </div>
   </section>
-
+  <div class="parallax" id="p3">
+  </div>
   <section id="tech">
-    <h1 class="section-title">Technologies</h1>
+    <h1 class="title">Technologies</h1>
     <div class="section-content tech-i-wrapper">
       <i class="devicon-html5-plain-wordmark colored"></i>
       <i class="devicon-css3-plain-wordmark colored"></i>
@@ -80,159 +93,115 @@
       <i class="devicon-git-plain colored"></i>
       <i class="devicon-github-plain colored"></i>
       <i class="devicon-heroku-original-wordmark colored"></i>
-      <i class="devicon-trello-plain-wordmark colored"></i>
       <i class="devicon-npm-original-wordmark colored"></i>
       <i class="devicon-yarn-plain-wordmark colored"></i>
-      <i class="devicon-slack-plain-wordmark colored"></i>
     </div>
   </section>
-
-  <section id="exp">
-    <h1 class="section-title">Experience</h1>
-    <div class="section-content">
-      <img class="ga-logo" src="/assets/ga-logo.png" alt="General Assembly logo">
-      <p>A typical day-to-day on the course included a morning stand-up followed by instructor-led 
-        remote interactive lessons with code-alongs and pair coding labs which prepared me to work in an Agile environment. 
-        At the end of each module, we completed a project using the technologies we were learning.
-      </p>
-    </div>
-  </section>
-  
+  <div class="parallax" id="p4">
+  </div>
   <section id="projects">
-    <h1 class="section-title">Projects</h1>
-    <div class="section-content">
-
-      <div class="project-card">
-        <img class="project-img" src="/assets/revive.png" alt="tbc">
-        <h3>Revive</h3>
-        <p>Solo project, 8 days</p>
-        <h4>Tech stack:</h4>
-        <div class="tech-stack">
-          <i class="devicon-html5-plain-wordmark"></i>
-          <i class="devicon-sass-original"></i>
-          <i class="devicon-javascript-plain"></i>
-          <i class="devicon-react-original-wordmark"></i>
-          <i class="devicon-python-plain-wordmark"></i>
-          <i class="devicon-django-plain"></i>
-          <i class="devicon-postgresql-plain-wordmark"></i>
-          <i class="devicon-visualstudio-plain"></i>
-          <i class="devicon-git-plain"></i>
-          <i class="devicon-github-plain"></i>
-          <i class="devicon-heroku-original-wordmark"></i>
-          <i class="devicon-npm-original-wordmark"></i>
-        <p>Revive is a site that allows members to list unwanted items, members can view listings and contact the owner 
-          via messaging on the app if they are interested in the item. I chose to do this as a solo project so that I 
-          could spend time understanding how to build a RESTful API using a relational database.</p>
+      <h1 class="title">Projects</h1>
+      <div class="section-content">
+        <div class="project-card odd-card">
+          <div class="project-card-box1">
+            <img class="project-img" src="/assets/projects/revive.png" alt="tbc">
+          </div>
+          <div class="project-card-box2">
+            <h3>Revive</h3>
+            <p class="subtitle">React | Python | Django | PostgreSQL | Sass | React-Bootstrap</p>
+            <p>In this 8 day project, I built an app that was inspired by Freecycle. Users could post unwanted items and recieve messages from members who expressed an interest in the item. I wanted to challenge myself by working solo to build a RESTful API using a relational database.</p>
+            <div class="project-links-wrapper">
+              <a class="project-links" href="#">project <i class="fas fa-link fa-lg"></i></a>
+              <a class="project-links" href="https://github.com/nhurstknight/sei-project-4">code <i class="fas fa-code fa-lg"></i></a>
+            </div>
+          </div>
         </div>
-        <div class="project-btn-wrapper">
-          <button class="project-btn"><i class="fas fa-link"></i></button>
-          <button class="project-btn"><i class="fas fa-code"></i></button>
+
+        <div class="project-card even-card">
+          <div class="project-card-box1">
+            <img class="project-img" src="/assets/projects//the-beans.png" alt="tbc">
+          </div>
+          <div class="project-card-box2">
+            <h3>The Beans</h3>
+            <p class="subtitle">React | Node.js | Express | MongoDB | Mongoose | React-Bootstrap | Sass</p>
+            <p>For this 9 day group project, we were challended to build a full-stack MERN app so we built an e-commerce webiste; The Beans.
+              We used Trello for project manangement and each built specific features. One of the features I built was the basket 
+              using a RESTful framework in Node.js/MongoDB and the front-end was built with React, React-Bootstrap and Sass.</p>
+            <div class="project-links-wrapper">
+              <a class="project-links" href="#">project <i class="fas fa-link fa-lg"></i></a>
+              <a class="project-links" href="https://github.com/nhurstknight/sei-project-3">code <i class="fas fa-code fa-lg"></i></a>
+            </div>
+          </div>
+
+        </div>            
+
+      <div class="project-card odd-card">
+        <div class="project-card-box1">
+          <img class="project-img" src="/assets/projects/movie-api.png" alt="tbc">
+        </div>
+        <div class="project-card-box2">
+          <h3>Movie API</h3>
+          <p class="subtitle">React | Sass | Bulma</p>
+          <p>The brief was to build a React app that consumes a public API in 2 days. I chose to pair code this project with one of my coursemates, 
+            this allowed us to talk through the problems we encountered whilst building functionality such as the search bar and pagination on the index page.</p>
+          <div class="project-links-wrapper">
+            <a class="project-links" href="https://condescending-kowalevski-76c740.netlify.app/">project <i class="fas fa-link fa-lg"></i></a>
+            <a class="project-links" href="https://github.com/nhurstknight/sei-project-2">code <i class="fas fa-code fa-lg"></i></a>
+          </div>         
+        </div>  
+      </div>
+      <div class="project-card even-card">
+        <div class="project-card-box1">
+          <img class="project-img" src="/assets/projects/space-invaders.png" alt="tbc">
+        </div>
+        <div class="project-card-box2">
+          <h3>Space Invaders</h3>
+          <p class="subtitle">HTML5 | CSS3 | JavaScript(ES6)</p>
+          <p>For this 9 day solo project, I chose to make the classic arcade game, Space Invaders. Building this allowed me to get to grips with 
+            writing functions in vanilla JavaScript. One of the biggest challenges of this project was the movement of the aliens within the grid. 
+            This project really helped me learn how to plan a project and break down larger problems.</p>
+          <div class="project-links-wrapper">
+            <a class="project-links" href="https://nhurstknight.github.io/space-invaders">project <i class="fas fa-link fa-lg"></i></a>
+            <a class="project-links" href="https://github.com/nhurstknight/space-invaders">code <i class="fas fa-code fa-lg"></i></a>
+          </div>
         </div>
       </div>
-
-      <hr>  
-
-      <div class="project-card">
-        <img class="project-img" src="/assets/the-beans.png" alt="tbc">
-        <h3>The Beans</h3>
-        <p>Group proect, 9 days </p>
-        <h4>Tech stack:</h4>
-        <div class="tech-stack">
-          <i class="devicon-html5-plain-wordmark"></i>
-          <i class="devicon-sass-original"></i>
-          <i class="devicon-javascript-plain"></i>
-          <i class="devicon-react-original-wordmark"></i>
-          <i class="devicon-nodejs-plain-wordmark"></i>
-          <i class="devicon-express-original-wordmark"></i>
-          <i class="devicon-mongodb-plain-wordmark"></i>
-          <i class="devicon-visualstudio-plain"></i>
-          <i class="devicon-git-plain"></i>
-          <i class="devicon-github-plain"></i>
-          <i class="devicon-heroku-original-wordmark"></i>
-          <i class="devicon-trello-plain-wordmark"></i>
-          <i class="devicon-npm-original-wordmark"></i>
-        </div>
-        <p>The Beans is an e-commerce website that links coffee bean roasters to consumers. In a group of 3, 
-          we each worked on specific components of the app and used Trello for project management.One of the key areas 
-          that I implemented was the basket using a RESTful framework in Node.Js/MongoDB and the front-end UI was built 
-          with React, Axios, React-Bootstrap and Sass.</p>
-        <div class="project-btn-wrapper">
-          <button class="project-btn"><i class="fas fa-link"></i></button>
-          <button class="project-btn"><i class="fas fa-code"></i></button>
-        </div>
-      </div>
-
-      <hr>  
-
-      <div class="project-card">
-        <img class="project-img" src="/assets/movie-api.png" alt="tbc">
-        <h3>Movie API</h3>
-        <p>Pair project, 1.5 days</p>
-        <h4>Tech stack:</h4>
-        <div class="tech-stack">
-          <i class="devicon-html5-plain-wordmark"></i>
-          <i class="devicon-sass-original"></i>
-          <i class="devicon-javascript-plain"></i>
-          <i class="devicon-visualstudio-plain"></i>
-          <i class="devicon-git-plain"></i>
-          <i class="devicon-github-plain"></i>
-          <i class="devicon-yarn-plain-wordmark"></i>
-        </div>
-        <p>The brief was to build a React app that consumes a public API. I chose to pair code this project with one of my coursemates, 
-          and this allowed us to talk through the problems we encountered in the development process such as implementing search bar 
-          functionality and pagination on the index page</p>
-        <div class="project-btn-wrapper">
-          <button class="project-btn"><i class="fas fa-link"></i></button>
-          <button class="project-btn"><i class="fas fa-code"></i></button>
-        </div>
-      </div>
-
-      <hr>  
-
-      <div class="project-card">
-        <img class="project-img" src="/assets/space-invaders.png" alt="tbc">
-        <h3>Space Invaders</h3>
-        <p>Solo project, 9 days</p>
-        <h4>Tech stack:</h4>
-        <div class="tech-stack">
-          <i class="devicon-html5-plain-wordmark"></i>
-          <i class="devicon-css3-plain-wordmark"></i>
-          <i class="devicon-javascript-plain"></i>
-          <i class="devicon-visualstudio-plain"></i>
-          <i class="devicon-git-plain"></i>
-          <i class="devicon-github-plain"></i>
-        </div>
-        <p>
-          For this project, I chose to make the classic arcade game, Space Invaders. Building this allowed me to get to grips with 
-          writing functions using vanilla JavaScript. One of the biggest challenges of this project was getting the collision detection to work. 
-          This project really helped me to learn how to plan and break down problems.</p>
-        <div class="project-btn-wrapper">
-          <button class="project-btn"><i class="fas fa-link"></i></button>
-          <button class="project-btn"><i class="fas fa-code"></i></button>
-        </div>
-      </div>
-
+    </section>
+    <div class="parallax" id="p5">
     </div>
-  </section>
-
-  <footer id="footer">
-    <h1 class="section-title">Contact</h1>
+    <!-- <footer id="contact">
+      <h1 class="title">Contact</h1>
+      <div class="section-content">
+        <div class="contact-links">
+          <div class="contact-item">
+            <a href="mailto:nhurst-knight@hotmail.com"><i class="far fa-envelope fa-2x"></i></a>
+          </div>
+          <div class="contact-item">
+            <a href="https://www.linkedin.com/in/nataliehurst-knight/"><i class="fab fa-linkedin fa-2x"></i></a>
+          </div>
+          <div class="contact-item">
+            <a href="https://github.com/nhurstknight"><i class="fab fa-github fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  <footer id="contact">
+    <h1 class="title">Contact</h1>
     <div class="section-content">
       <div class="contact-links">
         <div class="contact-item">
-          <i class="far fa-envelope fa-2x"><a href="mailto:nhurst-knight@hotmail.com"></a> </i>
+          <a href="mailto:nhurst-knight@hotmail.com"><i class="far fa-envelope fa-2x"></i></a>
         </div>
         <div class="contact-item">
-          <i class="fab fa-linkedin fa-2x"><a href="https://www.linkedin.com/in/nataliehurst-knight/"></a></i>
+          <a href="https://www.linkedin.com/in/nataliehurst-knight/"><i class="fab fa-linkedin fa-2x"></i></a>
         </div>
         <div class="contact-item">
-          <i class="fab fa-github fa-2x"></i><a href="https://github.com/nhurstknight"></a></span>
+          <a href="https://github.com/nhurstknight"><i class="fab fa-github fa-2x"></i></a>
         </div>
       </div>
     </div>
-  </footer> -->
+  </footer>
 
-
-
+  </div>
 </body>
 </html>
