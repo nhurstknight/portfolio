@@ -1,5 +1,4 @@
 /* color scheme
-cultured - #F5F5F5
 carnation pink - #ffa4cb
 sky blue crayola - #07e8ff
 golden poppy - #f8c000
@@ -23,8 +22,6 @@ body {
 }
 section {
   background-color: #fff;
-  /* outline: red 1px solid; */
-  /* position: relative; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -242,7 +239,7 @@ nav {
   flex-direction: column;
 }
 #about .title {
-  background-image: url('../assets/title/title-pink.png');
+  background-image: url("../assets/title/title-pink.png");
 }
 .about-img {
   border-radius: 50%;
@@ -255,7 +252,7 @@ nav {
 
 /* EXPERIENCE */
 #exp .title {
-  background-image: url('../assets/title/title-blue.png');
+  background-image: url("../assets/title/title-blue.png");
 }
 .ga-logo {
   width: 70%;
@@ -267,7 +264,7 @@ nav {
 
 /* TECH */
 #tech .title {
-  background-image: url('../assets/title/title-yellow.png');
+  background-image: url("../assets/title/title-yellow.png");
 }
 .tech-i-wrapper {
   width: 80%;
@@ -284,7 +281,7 @@ nav {
 
 /* PROJECTS */
 #projects .title {
-  background-image: url('../assets/title/title-green.png');
+  background-image: url("../assets/title/title-green.png");
 }
 .project-img {
   width: 100%;
@@ -297,7 +294,7 @@ nav {
   box-shadow: -10px 10px #00ffc1;
 }
 .project-card-box2 h3 {
-  background-image: url('../assets/title/mini-title-green.png');
+  background-image: url("../assets/title/mini-title-green.png");
   background-position: left;
   background-repeat: no-repeat;
   padding: 0 1em;
@@ -331,7 +328,7 @@ footer {
   height: 45vh;
 }
 #contact .title {
-  background-image: url('../assets/title/title-powder-blue.png');
+  background-image: url("../assets/title/title-powder-blue.png");
 }
 footer .section-content {
   box-shadow: -10px 10px #a4bfe4;
@@ -365,19 +362,19 @@ footer .section-content {
   background-blend-mode: multiply;
 }
 #p1 {
-  background-image: url('../assets/parallax/pink-fur.png');
+  background-image: url("../assets/parallax/pink-fur.png");
 }
 #p2 {
-  background-image: url('../assets/parallax/water.png');
+  background-image: url("../assets/parallax/water.png");
 }
 #p3 {
-  background-image: url('../assets/parallax/yellow-petals.png');
+  background-image: url("../assets/parallax/yellow-petals.png");
 }
 #p4 {
-  background-image: url('../assets/parallax/brick.png');
+  background-image: url("../assets/parallax/brick.png");
 }
 #p5 {
-  background-image: url('../assets/parallax/lavender.png');
+  background-image: url("../assets/parallax/lavender.png");
   height: 65vh;
 }
 
@@ -401,8 +398,6 @@ footer .section-content {
   }
   .title {
     font-size: 48px;
-  }
-  .about-img {
   }
   .bio {
     margin-left: 50px;
