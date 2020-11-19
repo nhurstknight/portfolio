@@ -21,3 +21,5 @@ function init() {
 
 }
 window.addEventListener('DOMContentLoaded', init)
+
+console.log('latest changes pushed')
