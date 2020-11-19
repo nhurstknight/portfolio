@@ -401,14 +401,23 @@ footer .section-content {
     font-size: 48px;
   }
   #about .section-content {
-    display: flex;
-    /* flex-grow: 1; */
-  }
-  .about-img-box {
+    flex-direction: row;
+    justify-content: center;
     margin-top: 100px;
   }
+  .about-img-box {
+    /* margin-top: 100px; */
+    /* flex-grow: 2; */
+  }
+  .about-img {
+    margin: auto;
+    max-width: 300px;
+    height: auto;
+  }
   .bio {
-    /* margin-left: 50px; */
+    margin-left: 50px;
+    flex-grow: 1;
+
   }
   .ga-logo {
     width: 40%;
@@ -494,10 +503,10 @@ footer .section-content {
     font-size: 22px;
   }
   #about .section-content {
-    flex-direction: row;
+
   }
   .about-img {
-    width: 100%
+    /* width: 100% */
   }
   footer .section-content {
     width: 40%;
