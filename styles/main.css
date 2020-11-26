@@ -30,20 +30,20 @@ section {
   max-width: 100%;
 }
 .section-content {
-  /* position: relative; */
   margin: 1em auto;
   width: 80%;
   text-align: left;
-  top: 15%;
 }
-.bio,
+#about .section-content,
 #exp .section-content,
-.tech-i-wrapper,
+#tech .section-content,
 .project-card,
 footer .section-content {
+  /* display: flex;
+  flex-flow: column; */
   border: 3px solid;
   padding: 0.5em;
-  margin-bottom: 25px;
+  margin-bottom: 2em;
 }
 h1 {
   font-size: 42px;
@@ -57,22 +57,30 @@ h2 {
 h3 {
   font-weight: 400;
   margin-top: 0.5em;
+  font-size: 16px;
 }
 p {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 1.7;
   margin-top: 0.5em;
 }
 .title {
-  font-size: 36px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 0.5em;
+  font-size: 36px;
   inline-size: 100%;
+  padding: 0.5em;
 }
 .subtitle {
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  inline-size: 100%;
+  padding: 1em 0;
+}
+.contrast-p {
   color: #5c5c5c;
 }
 img {
@@ -80,6 +88,7 @@ img {
   height: auto;
   margin: auto;
   display: block;
+  background-color: #888;
 }
 .nav-menu a,
 .hero a,
@@ -89,10 +98,11 @@ img {
   text-decoration: none;
   color: #000;
 }
-.nav-menu a,
-.hero a,
-.logo a {
-  font-size: 1.5em;
+.nav-menu a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
 }
 .nav-menu li a:hover {
   color: #fff;
@@ -120,6 +130,7 @@ nav {
   transition: top 0.5s ease-in-out;
 }
 .brand-logo {
+  background-color: #fff;
   height: 8vh;
   width: auto;
   position: absolute;
@@ -232,53 +243,71 @@ nav {
   width: 100%;
 }
 .hero-bg-img {
-  width: 80%;
+  width: 90%;
+}
+.hero-bg-img img,
+.ga-logo img {
+  background-color: #fff;
 }
 
 /* ABOUT */
-#about .section-content {
-  display: flex;
-  flex-direction: column;
-}
 #about .title {
   background-image: url("../assets/title/title-pink.png");
 }
-.about-img-box {
-  margin: 20px auto;
-}
-.bio {
+#about .section-content {
   box-shadow: -10px 10px #ffa4cb;
 }
+/* .about-img {
+  width: 300px;
+} */
 
 /* EXPERIENCE */
 #exp .title {
   background-image: url("../assets/title/title-blue.png");
 }
-.ga-logo {
-  width: 70%;
-  margin-left: -0.5em;
-}
 #exp .section-content {
   box-shadow: -10px 10px #07e8ff;
 }
+.ga-logo {
+  width: 70%;
+  margin-left: -0.5em;
+  background-color: #fff;
+}
 
 /* TECH */
-#tech {
-  position: relative;
-}
 #tech .title {
   background-image: url("../assets/title/title-yellow.png");
-  position: absolute;
-  top: 0;
 }
-.tech-i-wrapper {
+#tech .section-content {
+  box-shadow: -10px 10px #f8c000;
+  justify-content: center;
+}
+.icons {
   display: flex;
   flex-flow: row wrap;
+  align-self: center;
   justify-content: center;
-  box-shadow: -10px 10px #f8c000;
 }
-.tech-i-wrapper i {
-  font-size: 40px;
+#tech .section-content h3 {
+  background-image: url("../assets/title/mini-title-yellow.png");
+  margin-bottom: 0.5em;
+}
+.cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  outline: #000 1px solid;
+  margin: 0.5em;
+  width: 75px;
+  height: 75px;
+}
+.cell span {
+  font-size: 12px;
+}
+.devicon {
+  font-size: 25px;
+  color: #5c5c5c;
   margin: 0.2em;
 }
 
@@ -292,21 +321,15 @@ nav {
 }
 .project-card {
   padding: 0.5em;
-  margin: 1em 0;
   box-shadow: -10px 10px #00ffc1;
 }
-.project-card-box2 h3 {
+.project-card-txt h3 {
   background-image: url("../assets/title/mini-title-green.png");
-  background-position: left;
-  background-repeat: no-repeat;
-  padding: 0 1em;
 }
 .project-links-wrapper {
   display: flex;
   justify-content: space-between;
-}
-.project-links-wrapper {
-  margin: 1em;
+  margin: 1em auto;
 }
 .project-links {
   width: 110px;
@@ -325,7 +348,7 @@ nav {
 footer {
   position: relative;
   margin: auto;
-  width: 80%;
+  width: 90%;
   height: 45vh;
 }
 #contact .title {
@@ -333,21 +356,25 @@ footer {
 }
 footer .section-content {
   box-shadow: -10px 10px #a4bfe4;
-  margin-bottom: 30px;
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 70%;
+  transform: translate(-50%, -70%);
 }
 .contact-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .contact-links i {
-  font-size: 40px;
+  font-size: 30px;
 }
 .contact-links i:hover {
   color: #a4bfe4;
+}
+.email p{
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
 }
 
 /* PARALLAX */
@@ -358,25 +385,20 @@ footer .section-content {
   background-attachment: fixed;
   height: 100vh;
 }
-.tint {
-  background-color: rgba(0, 0, 0, 0.2);
-  background-blend-mode: multiply;
-}
 #p1 {
   background-image: url("../assets/parallax/pink-fur.png");
 }
 #p2 {
-  background-image: url("../assets/parallax/water.png");
+  background-image: url("../assets/parallax/blue-powder.png");
 }
 #p3 {
-  background-image: url("../assets/parallax/yellow-petals.png");
+  background-image: url("../assets/parallax/yellow-zig-zag.png");
 }
 #p4 {
   background-image: url("../assets/parallax/brick.png");
 }
 #p5 {
   background-image: url("../assets/parallax/lavender.png");
-  height: 65vh;
 }
 
 @media screen and (min-width: 720px) {
@@ -386,7 +408,7 @@ footer .section-content {
   }
   .scroll-up-btn,
   .scroll-down-btn {
-    font-size: 2em;
+    font-size: 1.2em;
   }
   h1 {
     font-size: 72px;
@@ -397,70 +419,66 @@ footer .section-content {
   h3 {
     font-size: 24px;
   }
-  .title {
-    font-size: 48px;
-  }
-  #about .section-content {
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 100px;
-  }
-  .about-img-box {
-    /* margin-top: 100px; */
-    /* flex-grow: 2; */
-  }
-  .about-img {
-    margin: auto;
-    max-width: 300px;
-    height: auto;
-  }
-  .bio {
-    margin-left: 50px;
-    flex-grow: 1;
-
-  }
-  .ga-logo {
-    width: 40%;
-    margin-left: -0.5em;
+  p,
+  .project-links,
+  .email p {
+    font-size: 18px;
   }
   #about, 
   #exp,
-  #tech {
+  #tech,
+  #projects {
     position: relative;
   }
   #about .title,
   #exp .title,
-  #tech .title  {
+  #tech .title,
+  #projects .title  {
     position: absolute;
     top: 0;
   }
-  .tech-i-wrapper {
-    margin: 90px auto;
+  .title {
+    font-size: 48px;
   }
-  .tech-i-wrapper i {
-    font-size: 70px;
-    padding: 0.2em;
+  .section-content {
+    margin-top: 15%;
   }
-  .bio,
-  #exp .section-content,
-  #tech .section-content,
-  .project-card.box2 {
-  padding: 1.5em;
+  .about-txt,
+  .exp-txt,
+  .tech-box,
+  .project-card-txt {
+    margin: 0 20px;
+  }
+  #about .section-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 20px;
+  }
+  .about-txt {
+    width: 50%;
+  }
+  .icons {
+    padding-bottom: 20px;
+    justify-content: left;
+  }
+  .project-links-wrapper {
+    justify-content: space-evenly;
   }
   .project-links {
-    font-size: 18px;
     width: 150px;
-  }
-  .project-card {
-    margin-bottom: 50px;
   }
   footer .section-content {
     width: 60%;
+    margin-top: 10px;
+  }
+  .contact-links i {
+    font-size: 40px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-
   .nav-links i, 
   .burger {
     display: none;
@@ -468,27 +486,25 @@ footer .section-content {
   .nav-header.hide {
     top: 0;
   }
+  .nav-links.active {
+    width: 100%;
+    transform: translateX(100%);
+  }
   .nav-menu {
     position: sticky;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     transform: translateX(-100%);
     width: 80%;
   }
   .nav-links li{
     display: flex;
     justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
     width: 20%;
     height: 10vh;
     padding: 0;
-    align-items: center;
   }
-  .nav-links.active {
-    width: 100%;
-    transform: translateX(100%);
+  .nav-links li a {
+    padding: 2.5vh
   }
   h1 {
     font-size: 128px;
@@ -496,17 +512,29 @@ footer .section-content {
   h2 {
     font-size: 64px;
   }
+  h3 {
+    font-size: 28px;
+  }
   .title {
     font-size: 72px;
   }
-  p {
+  p, 
+  .email p {
     font-size: 22px;
   }
-  #about .section-content {
-
+  .ga-logo img {
+    margin-left: 20px;
+    width: 40%;
   }
-  .about-img {
-    /* width: 100% */
+  .devicon {
+    font-size: 50px;
+  }
+  .cell {
+    width: 100px;
+    height: 100px;
+  }
+  .cell span {
+    font-size: 16px;
   }
   footer .section-content {
     width: 40%;

@@ -10,8 +10,9 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/2cd7446f3d.js" crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   <script src="scripts/app.js" charset="utf-8"></script>
-  <title>Natalie Hurst-Knight | Junior Developer</title>
+  <title>Natalie Hurst-Knight | Web Developer</title>
 </head>
 <body>
   <nav>
@@ -38,7 +39,7 @@
     <div class="hero-text">
       <h1>Natalie <br>
         Hurst-Knight</h1>
-      <h2>Junior Developer</h2>
+      <h2>Web Developer</h2>
     </div>
     <a class="scroll-down-btn" href="#about"><i class="fas fa-chevron-circle-down fa-2x"></i></i></a>
   </section>
@@ -47,16 +48,14 @@
   <section id="about">
     <h1 class="title">About</h1>
     <div class="section-content">
-      <div class="about-img-box">
-        <img class="about-img" src="assets/about/profile-img-small.jpg" alt="photo of Natalie">
-      </div>
-      <div class="bio">
-        <p>Hi, I'm Natalie. I'm a Junior Developer based in London.<br><br>  
-          I have experience building full stack applications and a passion for front-end development and design.<br><br> 
-          Before taking the plunge and pursuing a career change, I worked in a fast-paced and challenging industry; Fashion. I worked closely with Designers and Buyers to bring life to creative visions, whilst also managing multiple stakeholders.
-          Now, I would love to join an innovative company that develops well designed applications, where I could further develop my skills and understanding of coding.
-        </p>
-      </div>
+      <figure  class="about-img" >
+        <img src="assets/about/profile-img-small.jpg" alt="photo of Natalie">
+      </figure>
+      <p class="about-txt">Hi, I'm Natalie. I'm a Web Developer based in London.<br><br>  
+        I have experience building full-stack applications and a passion for front-end development and design.<br><br> 
+        Before taking the plunge and pursuing a career change, I worked in a fast-paced and challenging industry; Fashion. I worked closely with Designers and Buyers to bring life to creative visions, whilst also managing multiple stakeholders.
+        Now, I would love to join an innovative company that develops well designed applications, where I could further develop my skills and understanding of coding.
+      </p>
     </div>
   </section>
   <div class="parallax" id="p2">
@@ -64,107 +63,192 @@
   <section id="exp">
     <h1 class="title">Experience</h1>
     <div class="section-content">
-      <img class="ga-logo" src="assets/ga-logo-3.png" alt="General Assembly logo">
-      <h3>Software Engineering Immersive Bootcamp</h3>
-      <p class="subtitle">Aug 2020 - Oct 2020</p>
-      <p>
-        After discovering coding in 2019, I decided that I wanted to pursue a career as a Developer and decided to enrol on the SEI bootcamp at General Assembly. I really enjoyed my time at GA as it allowed me to collaborate with talented course mates on challenging projects. <br><br> 
-        A typical day-to-day on the course started with morning stand-up, followed by instructor-led remote interactive code-along sessions and pair coding labs which has prepared me to work in an Agile environment. At the end of each module, we completed a project using the technologies we had just learned.
-      </p>
+      <figure class="ga-logo">
+        <img src="assets/ga-logo-3.png" alt="General Assembly logo">
+      </figure>
+      <div class="exp-txt">
+        <h3 class="subtitle">Software Engineering Immersive Bootcamp</h3>
+        <p class="contrast-p">Aug 2020 - Oct 2020</p>
+        <p>
+          After discovering coding in 2019, I decided that I wanted to pursue a career as a Developer and decided to enrol on the SEI bootcamp at General Assembly. I really enjoyed my time at GA as it allowed me to collaborate with talented course mates on challenging projects. <br><br> 
+          A typical day-to-day started with morning stand-up, followed by instructor-led remote code-along sessions and pair coding labs, which has prepared me to work in an Agile environment. At the end of each module, we completed a project using the technologies we had just learned.
+        </p>
+      </div>
     </div>
   </section>
   <div class="parallax" id="p3">
   </div>
   <section id="tech">
-    <h1 class="title">Technologies</h1>
+    <h1 class="title">Software</h1>
     <div class="section-content">
-      <div class="section-content tech-i-wrapper">
-        <i class="devicon-html5-plain-wordmark colored"></i>
-        <i class="devicon-css3-plain-wordmark colored"></i>
-        <i class="devicon-javascript-plain colored"></i>
-        <i class="devicon-react-original-wordmark colored"></i>
-        <i class="devicon-nodejs-plain-wordmark colored"></i>
-        <i class="devicon-express-original-wordmark colored"></i>
-        <i class="devicon-mongodb-plain-wordmark colored"></i>
-        <i class="devicon-python-plain-wordmark colored"></i>
-        <i class="devicon-django-plain colored"></i>
-        <i class="devicon-postgresql-plain-wordmark colored"></i>
-        <i class="devicon-sass-original colored"></i>
-        <i class="devicon-visualstudio-plain colored"></i>
-        <i class="devicon-git-plain colored"></i>
-        <i class="devicon-github-plain colored"></i>
-        <i class="devicon-heroku-original-wordmark colored"></i>
-        <i class="devicon-npm-original-wordmark colored"></i>
-        <i class="devicon-yarn-plain-wordmark colored"></i>
+      <div class="tech-box">
+        <h3 class="subtitle">Experience with:</h3>
+        <div class="icons">
+
+          <div class="cell">
+            <i class="devicon devicon-html5-plain"></i>
+            <span>HTML5</span>
+          </div>
+          <div class="cell">
+            <i class="devicon devicon-css3-plain"></i>
+            <span>CSS3</span>
+          </div>
+          <div class="cell">
+            <i class="devicon devicon-javascript-plain"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="cell">
+            <i class="devicon devicon-react-original"></i>
+            <span>React</span>
+          </div>
+          <div class="cell">
+            <i class="devicon devicon-nodejs-plain"></i>
+            <span>Node.JS</span>
+          </div>
+          <div class="cell">
+            <i class="devicon devicon-express-original"></i>
+            <span>Express</span>
+          </div>
+          <div class="cell">
+            <i class="devicon devicon-mongodb-plain"></i>
+            <span>MongoDB</span>
+          </div>
+          <div class="cell">
+            <i class="devicon devicon-python-plain"></i>
+            <span>Python</span>
+          </div>
+          <div class="cell">
+            <i class="devicon devicon-django-plain"></i>
+            <span>Django</span>
+          </div>
+          <div class="cell">
+            <i class="devicon devicon-postgresql-plain"></i>
+            <span>PostgreSQL</span>
+          </div>
+          <div class="cell">
+            <span class="devicon iconify" data-icon="mdi:bulma" data-inline="false"></span>
+            <span>Bulma</span>
+          </div>
+          <div class="cell">
+            <i class="devicon devicon-sass-original"></i>
+            <span>Sass</span>
+          </div>
+          <div class="cell">
+            <i class="devicon devicon-git-plain"></i>
+            <span>git</span>
+          </div>
+          <div class="cell">
+            <i class="devicon devicon-github-plain"></i>
+            <span>GitHub</span>
+          </div>
+          <div class="cell">
+            <i class="devicon devicon-npm-original-wordmark"></i>
+            <span>npm</span>
+          </div>
+          <div class="cell">
+            <i class="devicon devicon-yarn-plain"></i>
+            <span>Yarn</span>
+          </div>
+          <div class="cell">
+            <span class="devicon iconify" data-icon="cib:netlify" data-inline="false"></span>
+            <span>Netlify</span>
+          </div>
+          <div class="cell">
+            <i class="devicon devicon-heroku-original"></i>
+            <span>Heroku</span>
+          </div>
+          <div class="cell">
+            <i class="devicon devicon-visualstudio-plain"></i>
+            <span>VSCode</span>
+          </div>
+          <div class="cell">
+            <i class="devicon devicon-slack-plain"></i>
+            <span>Slack</span>
+          </div>
+          <div class="cell">
+            <i class="devicon devicon devicon-trello-plain"></i>
+            <span>Trello</span>
+          </div>
+        </div>
+      </div>
+      <div class="tech-box">
+        <h3 class="subtitle">Learning:</h3>
+        <div class="icons">
+          <div class="cell">
+            <i class="devicon devicon-typescript-plain"></i>
+            <span>TypeScript</span>
+          </div>
+          <div class="cell">
+            <span class=" devicon iconify" data-icon="simple-icons:jest" data-inline="false"></span>
+            <span>Jest</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
   <div class="parallax" id="p4">
   </div>
   <section id="projects">
-      <h1 class="title">Projects</h1>
-      <div class="section-content">
-        <div class="project-card odd-card">
-          <div class="project-card-box1">
-            <img class="project-img" src="assets/projects/revive.png" alt="Revive">
-          </div>
-          <div class="project-card-box2">
-            <h3>Revive</h3>
-            <p class="subtitle">React | Python | Django | PostgreSQL | Sass | React-Bootstrap</p>
-            <p>In this 8 day project, I built an app that was inspired by Freecycle. Users could post unwanted items and receive messages from members who expressed an interest in the item. I wanted to challenge myself by working solo to build a RESTful API using a relational database.</p>
-            <div class="project-links-wrapper">
-              <a class="project-links" href="#">project <i class="fas fa-link fa-lg"></i></a>
-              <a class="project-links" href="https://github.com/nhurstknight/sei-project-4">code <i class="fas fa-code fa-lg"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card even-card">
-          <div class="project-card-box1">
-            <img class="project-img" src="assets/projects//the-beans.png" alt="The Beans">
-          </div>
-          <div class="project-card-box2">
-            <h3>The Beans</h3>
-            <p class="subtitle">React | Node.js | Express | MongoDB | Mongoose | React-Bootstrap | Sass</p>
-            <p>For this 9 day group project, we were challended to build a full-stack MERN app so we built an e-commerce webiste; The Beans.
-              We used Trello for project manangement and each built specific features. One of the features I built was the basket 
-              using a RESTful framework in Node.js/MongoDB and the front-end was built with React, React-Bootstrap and Sass.</p>
-            <div class="project-links-wrapper">
-              <a class="project-links" href="#">project <i class="fas fa-link fa-lg"></i></a>
-              <a class="project-links" href="https://github.com/nhurstknight/sei-project-3">code <i class="fas fa-code fa-lg"></i></a>
-            </div>
-          </div>
-
-        </div>            
-
-      <div class="project-card odd-card">
-        <div class="project-card-box1">
-          <img class="project-img" src="assets/projects/movie-api.png" alt="A General Assembly of Films">
-        </div>
-        <div class="project-card-box2">
-          <h3>A General Assembly of Films</h3>
-          <p class="subtitle">React | Sass | Bulma</p>
-          <p>The brief was to build a React app that consumes a public API in 2 days. I chose to pair code this project with one of my coursemates, 
-            this allowed us to talk through the problems we encountered whilst building functionality such as the search bar and pagination on the index page.</p>
-          <div class="project-links-wrapper">
-            <a class="project-links" href="https://condescending-kowalevski-76c740.netlify.app/">project <i class="fas fa-link fa-lg"></i></a>
-            <a class="project-links" href="https://github.com/nhurstknight/sei-project-2">code <i class="fas fa-code fa-lg"></i></a>
-          </div>         
-        </div>  
-      </div>
-      <div class="project-card even-card">
-        <div class="project-card-box1">
+    <h1 class="title">Projects</h1>
+    <div class="section-content">
+      <div class="project-card">
+        <figure class="project-card-img">
           <img class="project-img" src="assets/projects/space-invaders.png" alt="Space Invaders game">
-        </div>
-        <div class="project-card-box2">
-          <h3>Space Invaders</h3>
-          <p class="subtitle">HTML5 | CSS3 | JavaScript(ES6)</p>
+        </figure>
+        <div class="project-card-txt">
+          <h3 class="subtitle">Space Invaders</h3>
+          <p class="contrast-p">HTML5 | CSS3 | JavaScript(ES6)</p>
           <p>For this 9 day solo project, I chose to make the classic arcade game, Space Invaders. Building this allowed me to get to grips with 
             writing functions in vanilla JavaScript. One of the biggest challenges of this project was the movement of the aliens within the grid. 
             This project really helped me learn how to plan a project and break down larger problems.</p>
           <div class="project-links-wrapper">
-            <a class="project-links" href="https://nhurstknight.github.io/space-invaders">project <i class="fas fa-link fa-lg"></i></a>
-            <a class="project-links" href="https://github.com/nhurstknight/space-invaders">code <i class="fas fa-code fa-lg"></i></a>
+            <a class="project-links" href="https://nhurstknight.github.io/space-invaders" target="_blank" rel="noopener noreferrer">project <i class="fas fa-link fa-lg"></i></a>
+            <a class="project-links" href="https://github.com/nhurstknight/space-invaders" target="_blank" rel="noopener noreferrer">code <i class="fas fa-code fa-lg"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <figure class="project-card-img">
+          <img class="project-img" src="assets/projects/movie-api.png" alt="A General Assembly of Films">
+        </figure>
+        <div class="project-card-txt">
+          <h3 class="subtitle">A General Assembly of Films</h3>
+          <p class="contrast-p">React | Sass | Bulma</p>
+          <p>The brief was to build a React app that consumes a public API in 2 days. I chose to pair code this project with one of my coursemates, 
+            this allowed us to talk through the problems we encountered whilst building functionality such as the search bar and pagination on the index page.</p>
+          <div class="project-links-wrapper">
+            <a class="project-links" href="https://condescending-kowalevski-76c740.netlify.app/" target="_blank" rel="noopener noreferrer">project <i class="fas fa-link fa-lg"></i></a>
+            <a class="project-links" href="https://github.com/nhurstknight/sei-project-2" target="_blank" rel="noopener noreferrer">code <i class="fas fa-code fa-lg"></i></a>
+          </div>         
+        </div>  
+      </div>
+      <div class="project-card">
+        <figure class="project-card-img">
+          <img class="project-img" src="assets/projects//the-beans.png" alt="The Beans">
+        </figure>
+        <div class="project-card-txt">
+          <h3 class="subtitle">The Beans</h3>
+          <p class="contrast-p">React | Node.js | Express | MongoDB | Mongoose | React-Bootstrap | Sass</p>
+          <p>For this 9 day group project, we were challended to build a full-stack MERN app so we built an e-commerce webiste; The Beans.
+            We used Trello for project manangement and each built specific features. One of the features I built was the basket 
+            using a RESTful framework in Node.js/MongoDB and the front-end was built with React, React-Bootstrap and Sass.</p>
+          <div class="project-links-wrapper">
+            <a class="project-links" href="#0">project <i class="fas fa-link fa-lg"></i></a>
+            <a class="project-links" href="https://github.com/nhurstknight/sei-project-3" target="_blank" rel="noopener noreferrer">code <i class="fas fa-code fa-lg"></i></a>
+          </div>
+        </div>
+      </div> 
+      <div class="project-card">
+        <figure class="project-card-img">
+          <img class="project-img" src="assets/projects/revive.png" alt="Revive">
+        </figure>
+        <div class="project-card-txt">
+          <h3 class="subtitle">Revive</h3>
+          <p class="contrast-p">React | Python | Django | PostgreSQL | Sass | React-Bootstrap</p>
+          <p>In this 8 day project, I built an app that was inspired by Freecycle. Users could post unwanted items and receive messages from members who expressed an interest in the item. I wanted to challenge myself by working solo to build a RESTful API using a relational database.</p>
+          <div class="project-links-wrapper">
+            <a class="project-links" href="#0">project <i class="fas fa-link fa-lg"></i></a>
+            <a class="project-links" href="https://github.com/nhurstknight/sei-project-4" target="_blank" rel="noopener noreferrer">code <i class="fas fa-code fa-lg"></i></a>
           </div>
         </div>
       </div>
@@ -176,14 +260,14 @@
     <div class="section-content">
       <div class="contact-links">
         <div class="contact-item">
-          <a href="mailto:nhurst-knight@hotmail.com"><i class="far fa-envelope fa-2x"></i></a>
+          <a href="https://www.linkedin.com/in/nataliehurst-knight/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin fa-2x"></i></a>
         </div>
         <div class="contact-item">
-          <a href="https://www.linkedin.com/in/nataliehurst-knight/"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href="https://github.com/nhurstknight" target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa-2x"></i></a>
         </div>
-        <div class="contact-item">
-          <a href="https://github.com/nhurstknight"><i class="fab fa-github fa-2x"></i></a>
-        </div>
+      </div>
+      <div class="email">
+        <p>nhurst-knight@hotmail.com</p> 
       </div>
     </div>
   </footer>
