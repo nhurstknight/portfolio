@@ -161,7 +161,7 @@ nav {
   transform: translateX(100%);
   transition: all 0.5s ease-in;
 }
-.nav-links.active {
+.nav-links.is-is-active {
   transform: translateX(0%);
   z-index: 7;
 }
@@ -399,7 +399,7 @@ footer .section-content {
 }
 
 @media screen and (min-width: 720px) {
-  .nav-links.active {
+  .nav-links.is-active {
     width: 30%;
     transform: translateX(233%)
   }
@@ -483,7 +483,7 @@ footer .section-content {
   .nav-header.hide {
     top: 0;
   }
-  .nav-links.active {
+  .nav-links.is-active {
     width: 100%;
     transform: translateX(100%);
   }

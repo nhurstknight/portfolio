@@ -5,11 +5,11 @@ function init() {
   const scrollUpBtn = document.querySelector('.scroll-up-btn')
 
   burger.addEventListener('click', () => {
-    navLinks.classList.toggle('active')
+    navLinks.classList.toggle('is-active')
   })
 
   navLinks.addEventListener('click', () => {
-    navLinks.classList.toggle('active')
+    navLinks.classList.toggle('is-active')
   })
 
   window.addEventListener('scroll', () => {
