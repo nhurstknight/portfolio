@@ -11,6 +11,7 @@ light steel blue - #a4bfe4
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+
 }
 body {
   display: flex;
@@ -479,6 +480,9 @@ footer .section-content {
 }
 
 @media screen and (min-width: 1024px) {
+  * {
+    scroll-padding: 10vh;
+  }
   .nav-links i, 
   .burger {
     display: none;
